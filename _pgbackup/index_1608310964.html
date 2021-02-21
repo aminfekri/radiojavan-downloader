@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>دانلودر رادیو جوان</title>
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="sign-in.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="angular.min.js"></script>
+</head>
+<body class="container text-center" style="direction: rtl;">
+<form class="form-signin" ng-app="radiojavan" ng-controller="rdCtrl">
+	<div class="row justify-content-center ">
+		<img src="./assets/image/icon.jpeg" height="200px" class="radios-image"/>
+	</div>
+	<div class="mb-3 row">
+		<label for="inputEmail" class="text-color">آدرس</label>
+		<input type="text" id="inputEmail" class="form-control mb-3" required="" autofocus="" autocomplete="off"
+		       placeholder="آدرس را وارد کنید" ng-model="url">
+		<button class="btn btn-block btn-lg btn-dark" type="submit" ng-click="download()" ng-disabled="waiting">
+			<span ng-show="!waiting">
+							دانلود
+			</span>
+			<div class="spinner-border" role="status" ng-show="waiting">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</button>
+	</div>
+	<div class="btn btn-primary access-select" role="alert" ng-show="show_link">
+		<a href="{{show_link}}" class="link-download">دانلود با بهترین کیفیت</a>
+	</div>
+	<div class="alert alert-danger" role="alert" ng-show="error_net">
+		خطایی رخ داده است.
+		<br>
+		اتصال به اینترنت و فیلترشکن را بررسی کنید
+	</div>
+	<div class="alert alert-danger" role="alert" ng-show="error_copy">
+		کپی کردن خودکار ناموفق بود
+	</div>
+	<div class="alert alert-danger" role="alert" ng-show="error_empty">
+		لینک نمی تواند خالی باشد
+	</div>
+	<div class="row text-color">
+		<p>طراحی شده توسط:</p>
+		<a href="mailto:fekriamin@gmail.com" class="col-12 emaillink">fekriamin@gmail.com</a>
+	</div>
+	<p class=""></p>
+	<p class="mb-3 mt-5 text-muted">&copy; 2020-2021</p>
+</form>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="functions.js"></script>
+</body>
+</html>

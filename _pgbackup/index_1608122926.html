@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>دانلود رادیو جوان</title>
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="sign-in.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="angular.min.js"></script>
+</head>
+<body class="container text-center">
+<form class="form-signin" ng-app="radiojavan" ng-controller="rdCtrl">
+	<div class="row">
+		<label for="inputEmail">آدرس</label><input type="text" id="inputEmail" class="col-sm-3 form-control mb-3"
+		                                           required=""
+		                                           autofocus=""
+		                                           autocomplete="off"
+		                                           placeholder="آدرس را وارد کنید" ng-model="url">
+		<button class="btn btn-block btn-lg btn-primary" type="submit" ng-click="download()">دانلود</button>
+	</div>
+	<p class="mb-3 mt-5 text-muted">&copy; 2020-2021</p>
+</form>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="functions.js"></script>
+</body>
+</html>

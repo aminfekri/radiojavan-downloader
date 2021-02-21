@@ -1,0 +1,26 @@
+{
+  "name": "radiojavandownloader",
+  "version": "1.0.0",
+  "description": "download from radio javan",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "radiojavandownladeramin",
+    "mac": {
+      "category": "radiojavan.radiojavandownladeramin.music.mac"
+    }
+  },
+  "dependencies": {
+    "electron-reload": "^1.5.0",
+    "menubar": "^9.0.1"
+  },
+  "devDependencies": {
+    "electron": "^11.1.0",
+    "prettier": "2.2.1"
+  }
+}

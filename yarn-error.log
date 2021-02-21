@@ -1,0 +1,44 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.5/libexec/bin/yarn.js add electron-builder --dev
+
+PATH: 
+  /Users/host/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/host/Documents/developer/radiojavan/node_modules/.bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.16.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/app-builder-bin/-/app-builder-bin-3.5.10.tgz: unexpected end of file
+      at Zlib.zlibOnError [as onerror] (zlib.js:180:17)
+
+npm manifest: 
+  {
+    "name": "radiojavandownloader",
+    "version": "1.0.0",
+    "description": "download from radio javan",
+    "main": "main.js",
+    "private": true,
+    "scripts": {
+      "start": "electron ."
+    },
+    "dependencies": {
+      "electron-reload": "^1.5.0",
+      "menubar": "^9.0.1"
+    },
+    "devDependencies": {
+      "electron": "^11.1.0",
+      "prettier": "2.2.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

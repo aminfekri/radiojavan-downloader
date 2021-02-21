@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Far.Abasan';
+    src: url('./assets/font/yekan.eot');
+    src: local('☺'),
+    url('./assets/font/yekan.woff') format('woff'),
+    url('./assets/font/yekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Far.Abasan', Tahoma, Sans-Serif;
+    /*font-size: 24px;*/
+}
+
+
+.spantext {
+    display: block;
+}
+
+.form-signin {
+    direction: rtl;
+}
+
+.emaillink {
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+}
+
+.emaillink:hover {
+    color: darkgrey;
+}
+
+body {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+    background-color: black;
+}
+
+.text-color {
+    color: white;
+}
+
+.radios-image {
+    border-radius: 32px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.access-select {
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    -o-user-select: none;
+}
+
+.link-download {
+    color: white;
+    text-decoration: none;
+}
